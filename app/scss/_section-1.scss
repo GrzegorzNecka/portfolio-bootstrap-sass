@@ -1,0 +1,10 @@
+@import "zmienne";
+@import "mixins";
+
+#services{
+    background-color: #fff;
+    .fa-service{
+        @include favionServices;
+    }
+}
+

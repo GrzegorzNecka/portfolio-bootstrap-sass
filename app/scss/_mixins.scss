@@ -1,0 +1,97 @@
+@mixin flexCenter($direction, $display, $wrap, $position) {
+    flex-direction: $direction;
+    display: $display;
+    flex-wrap: $wrap;
+    justify-content: $position;
+    align-items: $position;
+}
+
+@mixin blueButton {
+    color: #fff;
+    background-color: #0ed8d6;
+    border: 1px solid #0ed8d6;
+    line-height: 40px;
+    padding: 0 10px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    transition: $base-transition;
+    &:hover {
+        color: #0ed8d6;
+        background-color: #FFF;
+    }
+}
+
+@mixin favionServices {
+    height: 80ox;
+    width: 80px;
+    font-size: 50px;
+    border-radius: 100%;
+    border: 1px solid #0ed8d6;
+    background-color: #0ed8d6;
+    line-height: 80px;
+    color: #fff;
+    transition: $base-transition;
+    &:hover {
+        background-color: #fff;
+        color: #0ed8d6;
+        transform: rotate(360deg);
+
+    }
+}
+
+@mixin portfolioImageSetting {
+    background-size: cover;
+    height: 400px;
+    transition: all, 0.4s;
+    background-position: center;
+    &:hover {
+        transform: scale(1.5)
+    }
+}
+
+@mixin loadImages {
+    &.port-1 {
+        background-image: url(../img/portfolio/box_of_cookies.jpg);
+    }
+    &.port-2 {
+        background-image: url(../img/portfolio/chaotic_paint.jpg);
+    }
+    &.port-3 {
+        background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
+    }
+    &.port-4 {
+        background-image: url(../img/portfolio/child_with_blue_paint.jpg);
+    }
+    &.port-5 {
+        background-image: url(../img/portfolio/house_with_blue_doors.jpg);
+    }
+    &.port-6 {
+        background-image: url(../img/portfolio/typing_on_laptop.jpg);
+    }
+}
+
+@mixin socials {
+
+    height: 30ox;
+    width: 30px;
+    font-size: 20px;
+    border-radius: 100%;
+    background-color: #000;
+    line-height: 30px;
+    color: #fff;
+    transition: all 0.4s;
+    margin: 10px;
+    &:hover {
+        background-color: #0ed8d6;
+
+    }
+}
+
+@mixin input{
+    width: 100%;
+    border-style: none;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 6px;
+    text-transform: uppercase;
+}

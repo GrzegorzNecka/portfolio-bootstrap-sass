@@ -1,0 +1,33 @@
+@import "zmienne";
+@import "mixins";
+
+
+.s2-portfolio {
+    background-color: #fff;
+    text-align: left;
+
+    .background-parent {
+        overflow: hidden;
+        .background-portfolio {
+            @include portfolioImageSetting;
+            @include loadImages;
+            .mask {
+                height: 400px;
+                opacity: 0;
+                &:hover {
+                    opacity: 1;
+                }
+                background-color: rgba(14, 216, 214, 0.6);
+                @include flexCenter(row, flex, wrap, center) 
+                    .fa-plus {
+                    color: #fff;
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+    p {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+}
+}

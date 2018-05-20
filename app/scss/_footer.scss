@@ -1,0 +1,20 @@
+@import "zmienne";
+@import "mixins";
+
+
+footer {
+
+    .footer-container {
+        @include flexCenter(row, flex, wrap, center);
+        .privacy p {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+
+        p {
+            margin: 0;
+        }
+
+    }
+
+}

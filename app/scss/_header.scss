@@ -1,0 +1,26 @@
+@import "zmienne";
+@import "mixins";
+
+
+#header {
+    height: 100vh;
+    background-image: url(../img/header/pictures_on_the_wall.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .background {
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        @include flexCenter(row, flex, wrap, center);
+        text-align: center;
+        color: #fff;
+        .btn-header {
+         @include blueButton;
+            }
+
+        }
+    }
+
+
+
+
