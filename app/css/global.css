@@ -1,0 +1,286 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    text-align: center;
+    padding: 25px 50px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+section h2 {
+    text-transform: uppercase;
+}
+
+p {
+    margin: 10px;
+}
+
+#main-nav {
+    transition: all, 0.4s;
+}
+
+#main-nav.scrolled {
+    background-color: rgba(14, 216, 214, 0.6);
+}
+
+#main-nav a {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    transition: all, 0.4s;
+}
+
+#main-nav a:hover {
+    color: #0ED8D6;
+}
+
+#main-nav #navbar-brand {
+    font-family: "Caveat", cursive;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+#header {
+    height: 100vh;
+    background-image: url(../img/header/pictures_on_the_wall.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#header .background {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+#header .background .btn-header {
+    color: #fff;
+    background-color: #0ed8d6;
+    border: 1px solid #0ed8d6;
+    line-height: 40px;
+    padding: 0 10px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    transition: all, 0.4s;
+}
+
+#header .background .btn-header:hover {
+    color: #0ed8d6;
+    background-color: #FFF;
+}
+
+#services {
+    background-color: #fff;
+}
+
+#services .fa-service {
+    height: 80ox;
+    width: 80px;
+    font-size: 50px;
+    border-radius: 100%;
+    border: 1px solid #0ed8d6;
+    background-color: #0ed8d6;
+    line-height: 80px;
+    color: #fff;
+    transition: all, 0.4s;
+}
+
+#services .fa-service:hover {
+    background-color: #fff;
+    color: #0ed8d6;
+    transform: rotate(360deg);
+}
+
+.s2-portfolio {
+    background-color: #fff;
+    text-align: left;
+}
+
+.s2-portfolio .background-parent {
+    overflow: hidden;
+}
+
+.s2-portfolio .background-parent .background-portfolio {
+    background-size: cover;
+    height: 400px;
+    transition: all, 0.4s;
+    background-position: center;
+}
+
+.s2-portfolio .background-parent .background-portfolio:hover {
+    transform: scale(1.5);
+}
+
+.s2-portfolio .background-parent .background-portfolio.port-1 {
+    background-image: url(../img/portfolio/box_of_cookies.jpg);
+}
+
+.s2-portfolio .background-parent .background-portfolio.port-2 {
+    background-image: url(../img/portfolio/chaotic_paint.jpg);
+}
+
+.s2-portfolio .background-parent .background-portfolio.port-3 {
+    background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
+}
+
+.s2-portfolio .background-parent .background-portfolio.port-4 {
+    background-image: url(../img/portfolio/child_with_blue_paint.jpg);
+}
+
+.s2-portfolio .background-parent .background-portfolio.port-5 {
+    background-image: url(../img/portfolio/house_with_blue_doors.jpg);
+}
+
+.s2-portfolio .background-parent .background-portfolio.port-6 {
+    background-image: url(../img/portfolio/typing_on_laptop.jpg);
+}
+
+.s2-portfolio .background-parent .background-portfolio .mask {
+    height: 400px;
+    opacity: 0;
+    background-color: rgba(14, 216, 214, 0.6);
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.s2-portfolio .background-parent .background-portfolio .mask:hover {
+    opacity: 1;
+}
+
+.s2-portfolio .background-parent .background-portfolio .mask .fa-plus {
+    color: #fff;
+    font-size: 3rem;
+}
+
+.s2-portfolio p {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+}
+
+.socials .fa {
+    height: 30ox;
+    width: 30px;
+    font-size: 20px;
+    border-radius: 100%;
+    background-color: #000;
+    line-height: 30px;
+    color: #fff;
+    transition: all 0.4s;
+    margin: 10px;
+}
+
+.socials .fa:hover {
+    background-color: #0ed8d6;
+}
+
+footer .footer-container {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-container .privacy p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+footer .footer-container p {
+    margin: 0;
+}
+
+#contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/footer/world-map.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#contact .form-left {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+#contact .form-left input {
+    height: 60px;
+    width: 100%;
+    border-style: none;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+
+#contact .form-right {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+#contact .form-right textarea {
+    width: 100%;
+    border-style: none;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+
+#contact button {
+    color: #fff;
+    background-color: #0ed8d6;
+    border: 1px solid #0ed8d6;
+    line-height: 40px;
+    padding: 0 10px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    transition: all, 0.4s;
+}
+
+#contact button:hover {
+    color: #0ed8d6;
+    background-color: #FFF;
+}
+
+#contact h2, #contact p {
+    color: #fff;
+}
+
+footer .footer-container {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-container .privacy p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+footer .footer-container p {
+    margin: 0;
+}

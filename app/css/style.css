@@ -1,0 +1,279 @@
+body {
+    margin: 0;
+    font-family: 'Roboto Slab';
+    background-color: #f7f7f7;
+}
+
+/*helper - naucz się pisać helpery*/
+
+section {
+    padding: 25px 50px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+p {
+    margin: 10px;
+}
+
+section h2,
+section h3,
+section p,
+figure {
+    color: black;
+    margin: 10px 10px;
+}
+
+section h3,
+figcaption {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+section header p {
+    font-style: italic;
+}
+
+section header h2 {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+h1,
+h2,
+button,
+#main-nav a {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*-------------------------navigacja--------------------------*/
+
+#main-nav a {
+    font-weight: 800;
+    transition: all, 0.4s;
+}
+
+
+#main-nav a:hover {
+    color: #0ED8D6;
+}
+
+#main-nav a#navbar-brand {
+    font-family: 'Pacifico', cursive;
+}
+
+#main-nav {
+    transition: all, 0.4s;
+}
+
+#main-nav.scrolled {
+    background-color: rgba(14, 216, 214, 0.6)
+}
+
+/*-------------------------header--------------------------*/
+
+#header {
+    height: 100vh;
+    background-image: url(../img/header/pictures_on_the_wall.jpg);
+    background-size: cover;
+}
+
+#header .background {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header .center-header {
+    text-align: center
+}
+
+.btn-header {
+    background-color: #0ed8d6;
+    border: 1px solid #0ed8d6;
+    line-height: 40px;
+    padding: 0 10px;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+
+.btn-header:hover {
+    color: #0ed8d6;
+    background-color: #FFF;
+}
+
+section {
+    text-align: center;
+}
+
+/*-------------------------s1 service--------------------------*/
+
+#services,
+#meet {
+    background-color: #fff;
+}
+
+.fa-service {
+    height: 80ox;
+    width: 80px;
+    font-size: 50px;
+    border-radius: 100%;
+    border: 1px solid #0ed8d6;
+    background-color: #0ed8d6;
+    line-height: 80px;
+    color: #fff;
+    transition: all 0.4s;
+}
+
+.fa-service:hover {
+    background-color: #fff;
+    color: #0ed8d6;
+    transform: rotate(360deg);
+}
+
+/*-------------------------portfolio--------------------------*/
+
+.s2-portfolio {
+    background-color: #fff;
+    text-align: left;
+}
+
+.background-parent {
+    overflow: hidden;
+}
+
+.background-portolio {
+    background-size: cover;
+    height: 400px;
+    transition: all, 0.4s;
+    background-position: center;
+}
+
+.background-portolio:hover {
+    transform: scale(1.5)
+}
+
+.mask {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(14, 216, 214, 0.6);
+    opacity: 0;
+}
+
+.mask:hover {
+    opacity: 1;
+}
+
+.s2-portfolio p {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+
+}
+
+.fa-plus {
+    color: #fff;
+    font-size: 3rem;
+}
+
+.port-1 {
+    background-image: url(../img/portfolio/box_of_cookies.jpg);
+}
+
+.port-2 {
+    background-image: url(../img/portfolio/chaotic_paint.jpg);
+}
+
+.port-3 {
+    background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
+}
+
+.port-4 {
+    background-image: url(../img/portfolio/child_with_blue_paint.jpg);
+}
+
+.port-5 {
+    background-image: url(../img/portfolio/house_with_blue_doors.jpg);
+}
+
+.port-6 {
+    background-image: url(../img/portfolio/typing_on_laptop.jpg);
+}
+
+/*-------------------------meet--------------------------*/
+
+.socials .fa {
+    height: 30ox;
+    width: 30px;
+    font-size: 20px;
+    border-radius: 100%;
+    background-color: #000;
+    line-height: 30px;
+    color: #fff;
+    transition: all 0.4s;
+    margin: 10px;
+}
+
+.socials .fa:hover {
+    background-color: #0ed8d6;
+
+}
+
+/*-------------------------contact--------------------------*/
+
+#contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/footer/world-map.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.contact-form {}
+
+.form-left,
+.form-right {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-left input {
+    height: 60px;
+}
+
+.form-left input,
+.form-right textarea {
+    width: 100%;
+    border-style: none;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 6px;
+    text-transform: uppercase;
+
+}
+
+header#section-head h2,
+header#section-head p {
+    color: #fff;
+}
+
+/*-------------------------footer--------------------------*/
+
+footer {
+    text-align: center;
+}
+
+footer .privacy p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+/*-------------------------media query---------------------*/
